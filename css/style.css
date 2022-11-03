@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Jumbotron Start */
+.header-jumbotron {
+    background-color: #080420;
+    padding: 2rem;
+}
+
+.header-jumbotron .header-jumbotron__title {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.header-jumbotron .header-jumbotron__description {
+    font-size: 0.9em;
+    color: #d8d3d3;
+}
+/* Jumbotron End */
+
+/* Navbar Start */
+.header-nav {
+    background-color: #040414;
+    font-size: 1.1em;
+    padding: 0.5rem;
+}
+
+.header-nav .header-nav__lists {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.header-nav .header-nav__link {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.header-nav .header-nav__link:hover {
+    color: #a8a4a4;
+}
+/* Navbar End */
+
+/* Main Start */
+.main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-articles {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.main-articles .main-articles__article {
+    margin-bottom: 1rem;
+}
+
+.main-articles .main-articles__article-image {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.main-articles .main-articles__article-title {
+    margin-bottom: 0.5rem;
+}
+
+.main .main-profile {
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: auto;
+    padding-top: 3rem;
+}
+
+.main-profile .main-articles__profile-image {
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.main-profile .main-profile__table {
+    text-align: left;
+}
+
+.main-profile .main-profile__table tr td {
+    vertical-align: top;
+}
+/* Main End */
+
+/* Footer Start */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #080420;
+    color: white;
+    font-size: 1em;
+}
+/* Footer End */
+
+/* Responsive Start*/
+@media screen and (min-width: 576px) {
+    .header-nav {
+        font-size: 1.3em;
+    }
+
+    .header-nav .header-nav__lists {
+        width: 40%;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .main .main-articles {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-nav {
+        font-size: 1.3em;
+    }
+
+    .header-nav .header-nav__lists {
+        width: 30%;
+    }
+
+    .main .main-articles {
+        flex: 2;
+    }
+
+    .main .main-profile {
+        flex: 0.5;
+    }
+
+    .main-articles .main-articles__article-image {
+        max-width: 40%;
+    }
+}
+/* Responsive End */
